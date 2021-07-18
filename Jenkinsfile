@@ -1,9 +1,12 @@
 
 pipeline {
     agent any
+    tools {
+        maven 'M2_HOME'
+    }
     stages {
         stage('build'){
-            staeps{
+            steps{
                 echo 'build'
                 sleep 10
             }
