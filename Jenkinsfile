@@ -13,15 +13,11 @@ pipeline {
                 sh 'mvn clean'
                 sh 'mvn install'
                 sh 'mvn package'
+                sh 'mvn test'
                 
             }
         }
-        stage('test') {
-           steps{
-               echo 'test step'
-               sh 'mvn test'
-           } 
-        }
+       
       
     }
 }
