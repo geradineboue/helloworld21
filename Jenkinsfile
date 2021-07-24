@@ -22,11 +22,6 @@ pipeline {
                sh 'mvn test'
            } 
         }
-       stage('deploy') {
-           steps{
-               echo 'deploy'
-               sleep 10 
-           }
-       }
+      
     }
 }
